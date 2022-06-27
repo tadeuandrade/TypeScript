@@ -1,10 +1,38 @@
 "use strict";
-let button = document.getElementById('button');
-let input1 = document.getElementById('input1');
-let input2 = document.getElementById('input2');
-let adicionarNumero = (n1, n2) => {
-    return n1 + n2;
+const pessoa = {
+    nome: 'Tadeu',
+    idade: 30,
+    profissao: 'analista'
 };
-button === null || button === void 0 ? void 0 : button.addEventListener('click', () => {
-    console.log(adicionarNumero(Number(input1.value), Number(input2.value)));
-});
+pessoa.idade = 30;
+let andre;
+let paula;
+var Profissao;
+(function (Profissao) {
+    Profissao[Profissao["Professora"] = 0] = "Professora";
+    Profissao[Profissao["Atriz"] = 1] = "Atriz";
+    Profissao[Profissao["Desenvolvedora"] = 2] = "Desenvolvedora";
+    Profissao[Profissao["Jogador"] = 3] = "Jogador";
+})(Profissao || (Profissao = {}));
+const vanessa = {
+    nome: 'Vanessa',
+    idade: 15,
+    profissao: Profissao.Desenvolvedora
+};
+const maria = {
+    nome: 'Maria',
+    idade: 25,
+    profissao: Profissao.Jogador
+};
+const jessi = {
+    nome: 'jessi',
+    idade: 25,
+    profissao: Profissao.Atriz,
+    materias: ['matematica', 'portugues']
+};
+let listar = (lista) => {
+    for (const item of lista) {
+        console.log('- ', item);
+    }
+};
+listar(jessi.materias);
