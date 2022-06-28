@@ -1,3 +1,3 @@
 # TypeScript
  
-sobre o tipo de variavel any
+Breve revisão sobre tipos apresentados

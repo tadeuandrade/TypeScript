@@ -29,7 +29,7 @@ enum Profissao {
 interface Pessoa {
     nome: string,
     idade: number,
-    profissao: Profissao
+    profissao?: Profissao
 }
 
 
