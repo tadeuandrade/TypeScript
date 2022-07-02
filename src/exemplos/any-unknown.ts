@@ -14,7 +14,7 @@ unknownv = 'vai sim';
 
 
 let str2: string = 'agora vai';
-str2 = unknownv;
+//str2 = unknownv;
 
 typeof unknownv === 'string' ? str2 = unknownv : unknownv
 

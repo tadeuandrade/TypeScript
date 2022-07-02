@@ -11,7 +11,7 @@ unknownv = 'opa';
 unknownv = true;
 unknownv = 'vai sim';
 let str2 = 'agora vai';
-str2 = unknownv;
+//str2 = unknownv;
 typeof unknownv === 'string' ? str2 = unknownv : unknownv;
 let jE = (erro, codigo) => {
     throw { error: erro, code: codigo };
